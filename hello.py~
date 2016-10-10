@@ -1,0 +1,8 @@
+from flask import Flask
+from flask_script import Manager
+app = Flask(__name__)
+@app.route('/')
+def index():
+	return '<h1>hello flask</h1>'
+if __name__ == '__main__':
+	app.run()

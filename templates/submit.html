@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>test</title>
+</head>
+<body>
+<form method="POST",action="/submit">
+	{{ form.hidden_tag()}}
+	{{ form.name.label }}{{form.name()}}
+	</br>
+	{{ form.passwd.label }}{{form.passwd()}}
+	</br>
+	{{form.submit()}}
+</form>
+</body>
+</html>
